@@ -1,3 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Signika&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    @apply font-[Signika];
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .section-title {
+    @apply text-4xl font-bold;
+  }
+  .portfolio-page .portfolio-card:hover .content {
+    @apply !flex;
+  }
+}

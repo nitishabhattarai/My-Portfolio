@@ -9,10 +9,10 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
         <Header />
         <Home />
         <Works />
@@ -20,7 +20,6 @@ const App = () => {
         <Portfolio />
         <Contact />
         <Footer />
-      </div>
     </BrowserRouter>
   );
 };
