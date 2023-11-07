@@ -1,14 +1,24 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="bg-black py-20 text-white about-section" id="about">
       <div className="2xl:max-w-6xl flex mx-auto gap-20 content">
         <div className="pl-20 w-1/2">
-          <div className="text-4xl section-title font-[Signika] font-bold">
+          <motion.div 
+           animate={{ x: [50, 150, 0], opacity: 1, scale: 1 }}
+           transition={{
+               duration: 5,
+               delay: 0.3,
+              
+           }}
+           initial={{ opacity: 0, scale: 0.5 }}
+          //  whileHover={{ scale: 1.2 }}
+          className="text-4xl section-title font-[Signika] font-bold">
             ABOUT ME
-          </div>
+          </motion.div>
           <div className="mt-3 max-w-xl mx-auto text-xl intro">
             I am Nitisha Bhattarai, an enthusiastic Software Engineer, based on
             Nepal, aspiring to develop quality products. My expertise is

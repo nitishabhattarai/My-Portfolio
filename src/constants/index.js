@@ -4,6 +4,8 @@ import {
   restroB,
   ideaskitab,
   qobrix,
+  avartan,
+  wallG,
 } from "../assets/images";
 
 export const navLinks = [
@@ -25,7 +27,7 @@ export const navLinks = [
   },
 ];
 
-export const images = [
+export const portfolio = [
   {
     src: qobrix,
     title: "Qobrix & Qoetix",
@@ -64,7 +66,7 @@ export const images = [
     alt: "RestroB",
     tags: ['React', 'Typescript', 'SCSS', 'Firebase', 'Redux'],
     description:
-      "Restrob is a web application for all restaurant diners who wish to experience the aesthetics and lively vibe of eating out. Users can search for their favourite restaurant, see the menu, book a table for them and enjoy the dine-in experience with their friends, family, colleagues or acquaintances. A smooth process to book, eat and live the moment.",
+      "Restrob is a web application for all restaurant diners who wish to experience the aesthetics and lively vibe of eating out. Users can search for their favourite restaurant, see the menu, book a table for them and enjoy the dine-in experience with their friends, family, colleagues or acquaintances. A smooth process to book, eat and live the moment. I worked on vendor web app and user app of this project.",
   },
   {
     src: ideaskitab,
@@ -76,4 +78,23 @@ export const images = [
     description:
       "IdeasKitab is an e-learning platform where we can find books of different categories, by different authors which comes with an e-commerce feature to buy/sell e-books along with online reading option.",
   },
+  {
+    src:avartan,
+    title: "Avartan Technology's Website",
+    themeColor:"",
+    alt: "Avartan Technology",
+    tags: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap'],
+    description: "I developed the official site of Avartan Technology, a RnD company focus on Data Driven Optimization."
+
+  },
+  {
+    src:wallG,
+    title: "Wall-G's Website",
+    themeColor:"",
+    alt: "Wall-G",
+    tags: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap'],
+    description: "I worked as a project manager in the respective project. I have also developed the website and currently worked on the firmware and backend of the Wall-G."
+
+  }
+
 ];

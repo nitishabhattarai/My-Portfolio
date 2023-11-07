@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        'primary': "#81acdd",
+        'secondary-color': "#D43F52"
+      },
       backgroundImage: {
         "hero-bg": "url('../src/assets/images/hero_bg.jpg')",
       },

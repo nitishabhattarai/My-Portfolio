@@ -13,6 +13,8 @@ import email from "./email.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
+import avartan from "./avartan.jpg";
+import wallG from "./wall-G.png";
 
 export {
   p_photo,
@@ -30,4 +32,6 @@ export {
   facebook,
   instagram,
   linkedin,
+  avartan,
+  wallG
 };

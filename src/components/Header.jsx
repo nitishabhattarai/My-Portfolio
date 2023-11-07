@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+// import { useInView } from 'react-intersection-observer';
 
 import { styles } from '../styles';
 import { menu } from '../assets/images';
@@ -9,6 +10,7 @@ import '../main.css';
 const Header = () => {
   const [active, setActive] = useState("");
   const [toogle, setToogle] = useState(false);
+
   return (
     <nav
     className={`${styles.paddingX} w-full 
@@ -26,14 +28,14 @@ const Header = () => {
           window.scrollTo(0, 0);
         }}
       >
-        <h1 className='font-[Acme] text-4xl tracking-wider bg-gradient-to-r from-blue-600 via-white to-green-400 inline-block text-transparent bg-clip-text'>Nitisha</h1>
+        <h1 className='font-[Sacramento] text-6xl tracking-wider bg-gradient-to-r from-blue-600 via-white to-green-400 inline-block text-transparent bg-clip-text'>Nitisha</h1>
       </Link>
       <ul className="list-none hidden sm:flex flex-row gap-10">
         {navLinks.map((link) => (
           <li
             key={link.id}
             className={`${
-              active === link.title ? "text-white" : "text-blue-300"
+              active === link.title ? "text-white" : "text-primary"
             }
               hover:text-white text-[18px] font-medium cursor-pointer
               `}
