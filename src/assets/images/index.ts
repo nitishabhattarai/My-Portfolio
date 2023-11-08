@@ -15,6 +15,8 @@ import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import avartan from "./avartan.jpg";
 import wallG from "./wall-G.png";
+import rightArrow from "./right-arrow.svg";
+import brightest from "./brightest.svg";
 
 export {
   p_photo,
@@ -33,5 +35,7 @@ export {
   instagram,
   linkedin,
   avartan,
-  wallG
+  wallG,
+  rightArrow,
+  brightest
 };

@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",
+    "@types/jest": "^29.5.7",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.36",
+    "@types/react-dom": "^18.2.14",
     "@types/react-router-dom": "^5.3.3",
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
@@ -11,7 +15,9 @@
     "react-intersection-observer": "^9.5.2",
     "react-particles": "^2.9.3",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "^0.9.5"
+    "react-scripts": "5.0.1",
+    "tsparticles": "^2.12.0",
+    "typed.js": "^2.0.16"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,6 +31,18 @@
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2"
+    "typescript": "^3.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
