@@ -14,7 +14,7 @@ const Contact = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="bg-black text-white p-20 contact-section" id="contact">
+    <div className="bg-black text-white p-28 contact-section" id="contact">
       <motion.div
         ref={ref}
         animate={controls}
@@ -24,7 +24,7 @@ const Contact = () => {
       >
         CONTACT ME
       </motion.div>
-      <div className="flex mt-8 w-full">
+      <div className="flex mt-12 w-full">
         <div className="w-1/2">
           <div className="mt-12 text-gray-400 contact-info">
             <div className="mb-4 flex items-center">
@@ -62,7 +62,7 @@ const Contact = () => {
             placeholder="Your Message"
             className="mb-5 text-base w-full py-3 px-3 border border-gray-500 bg-transparent"
           />
-          <button className="bg-secondary-color text-white w-full py-3">
+          <button className="bg-secondary text-white w-full py-3">
             SEND ME
           </button>
         </div>

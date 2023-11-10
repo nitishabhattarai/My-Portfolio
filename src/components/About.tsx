@@ -13,17 +13,17 @@ const About = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="bg-black py-20 text-white about-section" id="about">
+    <div className="bg-black py-28 about-section" id="about">
         <motion.div
           ref={ref}
           animate={controls}
           initial={{ opacity: 0, x: "-100vh" }}
           variants={titleVariant}
-          className="section-title text-center"
+          className="section-title text-white text-center"
         >
           ABOUT ME
         </motion.div>
-      <div className="2xl:max-w-6xl mt-8 flex mx-auto gap-20 content">
+      <div className="2xl:max-w-6xl text-gray-400 mt-12 flex mx-auto gap-20 content">
       
         <div className="pl-20 w-1/2">
           <div className="mt-3 max-w-xl mx-auto text-xl intro">

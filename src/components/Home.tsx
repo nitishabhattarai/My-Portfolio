@@ -6,8 +6,6 @@ import Typed from "typed.js";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -15,22 +13,19 @@ const Home = () => {
   }, []);
 
   const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
+    async (container: Container | undefined) => {},
     []
   );
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [`turning ideas into real life products!`
-      ], // Strings to display
+      strings: [`turning ideas into real life products!`], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100
+      typeSpeed: 200,
+      backSpeed: 150,
+      backDelay: 100,
     });
 
     // Destropying
@@ -72,7 +67,7 @@ const Home = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#D43F52",
             },
             links: {
               color: "#ffffff",
@@ -101,21 +96,24 @@ const Home = () => {
               },
               value: 80,
             },
-            // opacity: {
-            //     value: 0.5,
-            // },
-            // shape: {
-            //     type: "circle",
-            // },
-            // size: {
-            //     value: { min: 1, max: 5 },
-            // },
+            opacity: {
+                value: 0.5,
+            },
+            shape: {
+                type: "circle",
+            },
+            size: {
+                value: { min: 1, max: 5 },
+            },
           },
           detectRetina: true,
         }}
       />
-      <div className="text-left absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 hero_content">
-      <div className="bg-gradient-to-r from-secondary-color via-blue-500 to-pink-400 inline-block text-transparent bg-clip-text text-7xl max-w-2xl" ref={el}></div>
+      <div className="text-center absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 hero_content">
+        <div
+          className="bg-gradient-to-r from-secondary via-blue-500 to-pink-400 inline-block text-transparent bg-clip-text text-7xl max-w-5xl"
+          ref={el}
+        ></div>
       </div>
     </div>
   );
