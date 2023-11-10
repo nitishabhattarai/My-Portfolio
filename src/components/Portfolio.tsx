@@ -63,7 +63,7 @@ const Portfolio = () => {
                     src={item.src}
                     alt={item.alt}
                   />
-                  <div className="p-10 hidden flex-col justify-center text-center bg-primary absolute top-0 z-20 h-full transition-all duration-[5s] content">
+                  <div className="p-10 invisible flex flex-col justify-center text-center bg-primary absolute top-0 z-20 h-full transition-all duration-[2s] ease-out content">
                     <div className="text-3xl project-title">{item.title}</div>
                     <div className="text-sm mt-2 description">
                       {item.description}

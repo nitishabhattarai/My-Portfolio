@@ -21,6 +21,6 @@
     @apply text-4xl font-bold;
   }
   .portfolio-page .portfolio-card:hover .content {
-    @apply !flex;
+    @apply visible transition-all duration-[3s] ease-in;
   }
 }

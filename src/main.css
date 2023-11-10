@@ -629,6 +629,10 @@ html {
   visibility: visible;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .fixed{
   position: fixed;
 }
@@ -960,13 +964,13 @@ html {
   background-color: rgb(129 172 221 / var(--tw-bg-opacity));
 }
 
-.bg-transparent{
-  background-color: transparent;
-}
-
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(212 63 82 / var(--tw-bg-opacity));
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-gradient-to-r{
@@ -1203,6 +1207,11 @@ html {
   color: rgb(129 172 221 / var(--tw-text-opacity));
 }
 
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-secondary{
   --tw-text-opacity: 1;
   color: rgb(212 63 82 / var(--tw-text-opacity));
@@ -1257,12 +1266,16 @@ html {
   transition-duration: 500ms;
 }
 
-.duration-\[5s\]{
-  transition-duration: 5s;
+.duration-\[2s\]{
+  transition-duration: 2s;
 }
 
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .section-title{
@@ -1272,7 +1285,12 @@ html {
 }
 
 .portfolio-page .portfolio-card:hover .content{
-  display: flex !important;
+  visibility: visible;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hover\:border-gray-500:hover{

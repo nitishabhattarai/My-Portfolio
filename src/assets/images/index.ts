@@ -9,7 +9,7 @@ import ideaskitab from "./ideaskitab.png";
 import qobrix from "./qobrix.png";
 import callChat from "./call-chat.svg";
 import location from "./location.svg";
-import email from "./email.svg";
+import emailIcon from "./email.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
@@ -30,7 +30,7 @@ export {
   qobrix,
   callChat,
   location,
-  email,
+  emailIcon,
   facebook,
   instagram,
   linkedin,
