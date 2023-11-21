@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black text-white p-28 contact-section" id="contact">
+    <div className="bg-black text-white px-10 py-28 xl:px-28 contact-section" id="contact">
       <motion.div
         ref={ref}
         animate={controls}
@@ -48,16 +48,16 @@ const Contact = () => {
       >
         CONTACT ME
       </motion.div>
-      <div className="flex mt-12 w-full">
-        <div className="w-1/2">
+      <div className="flex flex-col xl:flex-row mt-12 w-full">
+        <div className="xl:w-1/2">
           <div className="mt-12 text-gray-400 contact-info">
-            <div className="mb-4 flex items-center">
+            <div className="mb-8 flex items-center">
               <div className="border-2 cursor-pointer flex items-center justify-center hover:bg-white hover:border-gray-500 transition-[bg] duration-500 ease-in mr-4 w-16 h-16 rounded-full border-white icon">
                 <img src={callChat} alt="web-icon" className="w-8 h-8" />
               </div>
               <div>+9779816315905</div>
             </div>
-            <div className="mb-4 flex items-center">
+            <div className="mb-8 flex items-center">
               <div className="border-2 cursor-pointer flex items-center justify-center hover:bg-white hover:border-gray-500 transition-[bg] duration-500 ease-in mr-4 w-16 h-16 rounded-full border-white icon">
                 <img src={emailIcon} alt="web-icon" className="w-8 h-8" />
               </div>
@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 pl-5 contact-form">
+        <div className="xl:w-1/2 xl:pl-5 mt-20 contact-form">
           <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"

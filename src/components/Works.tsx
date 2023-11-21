@@ -42,13 +42,13 @@ const Works = () => {
       >
         WHAT I DO
       </motion.div>
-      <div className="mt-12 max-w-6xl 2xl:max-w-7xl mx-auto works">
+      <div className="mt-12 px-10 xl:max-w-6xl 2xl:max-w-7xl mx-auto works">
         <div className="work">
           <motion.div
             variants={container}
             initial="hidden"
-            animate="visible"
-            className="mt-3 grid grid-cols-2 gap-4 text-base description"
+            animate={controls}
+            className="mt-3 grid xl:grid-cols-2 gap-4 text-base description"
           >
             {works.map((work: string, key:number) => {
               return (
@@ -57,7 +57,7 @@ const Works = () => {
                   key={key}
                   className="flex gap-3 mb-2 text-lg items-center"
                 >
-                  <img className="h-5" src={rightArrow} alt="arrow" />
+                  {/* <img className="h-5" src={rightArrow} alt="arrow" /> */}
                   {work}
                 </motion.div>
               );

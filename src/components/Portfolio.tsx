@@ -32,7 +32,7 @@ const Portfolio = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="bg-[#1a1a1a] text-white p-28 portfolio-page" id="portfolio">
+    <div className="bg-[#1a1a1a] text-white px-10 py-28 xl:px-28 portfolio-page" id="portfolio">
       <motion.div
         ref={ref}
         animate={controls}
@@ -46,7 +46,7 @@ const Portfolio = () => {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="mt-12 grid grid-cols-2 gap-10 portfolio"
+        className="mt-12 grid xl:grid-cols-2 gap-10 portfolio"
       >
         {portfolio.map((item, key) => {
           return (

@@ -23,10 +23,10 @@ const About = () => {
         >
           ABOUT ME
         </motion.div>
-      <div className="2xl:max-w-6xl text-gray-400 mt-12 flex mx-auto gap-20 content">
+      <div className="2xl:max-w-6xl px-10 xl:px-0 text-gray-400 mt-12 flex flex-col xl:flex-row mx-auto gap-20 content">
       
-        <div className="pl-20 w-1/2">
-          <div className="mt-3 max-w-xl mx-auto text-xl intro">
+        <div className="xl:pl-20 xl:w-1/2">
+          <div className="mt-3 xl:max-w-xl mx-auto text-xl intro">
             I am Nitisha Bhattarai, an enthusiastic Software Engineer, based on
             Nepal, aspiring to develop quality products. My expertise is
             developing next-level websites and web applications including full
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-1/2 pr-20 font-[Signika] skills">
+        <div className="xl:w-1/2 xl:pr-20 font-[Signika] skills">
           <div>
             <div className="flex justify-between">
               <label>HTLM5</label>

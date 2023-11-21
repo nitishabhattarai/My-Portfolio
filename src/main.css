@@ -740,6 +740,14 @@ html {
   margin-top: 1.25rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -973,6 +981,11 @@ html {
   background-color: transparent;
 }
 
+.bg-\[\#252734\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 39 52 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1087,6 +1100,16 @@ html {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-4{
@@ -1205,11 +1228,6 @@ html {
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(129 172 221 / var(--tw-text-opacity));
-}
-
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-secondary{
@@ -1365,6 +1383,58 @@ html {
 
   .lg\:leading-\[98px\]{
     line-height: 98px;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-1\/2{
+    width: 50%;
+  }
+
+  .xl\:max-w-7xl{
+    max-width: 80rem;
+  }
+
+  .xl\:max-w-6xl{
+    max-width: 72rem;
+  }
+
+  .xl\:max-w-xl{
+    max-width: 36rem;
+  }
+
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:p-28{
+    padding: 7rem;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:px-28{
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .xl\:pl-20{
+    padding-left: 5rem;
+  }
+
+  .xl\:pr-20{
+    padding-right: 5rem;
+  }
+
+  .xl\:pl-5{
+    padding-left: 1.25rem;
   }
 }
 
