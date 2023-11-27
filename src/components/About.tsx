@@ -38,6 +38,18 @@ const About = () => {
           <div>
             <div className="flex justify-between">
               <label>HTLM5</label>
+              <span className="text-sm">95%</span>
+            </div>
+            <ProgressBar
+              completed={95}
+              bgColor={"#6183a8"}
+              height="7px"
+              isLabelVisible={false}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex justify-between">
+              <label>CSS3</label>
               <span className="text-sm">90%</span>
             </div>
             <ProgressBar
@@ -49,23 +61,11 @@ const About = () => {
           </div>
           <div className="mt-5">
             <div className="flex justify-between">
-              <label>CSS3</label>
-              <span className="text-sm">85%</span>
-            </div>
-            <ProgressBar
-              completed={85}
-              bgColor={"#6183a8"}
-              height="7px"
-              isLabelVisible={false}
-            />
-          </div>
-          <div className="mt-5">
-            <div className="flex justify-between">
               <label>REACT</label>
-              <span className="text-sm">65%</span>
+              <span className="text-sm">75%</span>
             </div>
             <ProgressBar
-              completed={65}
+              completed={75}
               bgColor={"#6183a8"}
               height="7px"
               isLabelVisible={false}
@@ -74,10 +74,10 @@ const About = () => {
           <div className="mt-5">
             <div className="flex justify-between">
               <label>JAVASCRIPT</label>
-              <span className="text-sm">70%</span>
+              <span className="text-sm">80%</span>
             </div>
             <ProgressBar
-              completed={70}
+              completed={80}
               bgColor={"#6183a8"}
               height="7px"
               isLabelVisible={false}
