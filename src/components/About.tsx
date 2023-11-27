@@ -95,6 +95,31 @@ const About = () => {
               isLabelVisible={false}
             />
           </div>
+          <div className="mt-5">
+            <div className="flex justify-between">
+              <label>TYPESCRIPT</label>
+              <span className="text-sm">80%</span>
+            </div>
+            <ProgressBar
+              completed={80}
+              bgColor={"#6183a8"}
+              height="7px"
+              isLabelVisible={false}
+            />
+          </div>
+          <div className="mt-5">
+            <div className="flex justify-between">
+              <label>TAILWIND CSS</label>
+              <span className="text-sm">90%</span>
+            </div>
+            <ProgressBar
+              completed={90}
+              bgColor={"#6183a8"}
+              height="7px"
+              isLabelVisible={false}
+            />
+          </div>
+          
         </div>
       </div>
     </div>
