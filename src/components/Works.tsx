@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { brightest, rightArrow, web_dev } from "../assets/images";
 import { titleVariant, works } from "../constants";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -32,11 +31,11 @@ const Works = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="w-full py-28 text-white bg-[#1a1a1a]" id="works">
+    <div className="w-full py-28 text-white h-screen bg-[#1a1a1a]" id="works">
       <motion.div
         ref={ref}
         animate={controls}
-        initial={{ opacity: 0, x: "-100vh" }}
+        initial={{ opacity: 0, x: "100%" }}
         variants={titleVariant}
         className="w-full text-center section-title"
       >

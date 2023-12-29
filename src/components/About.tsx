@@ -17,7 +17,7 @@ const About = () => {
         <motion.div
           ref={ref}
           animate={controls}
-          initial={{ opacity: 0, x: "-100vh" }}
+          initial={{ opacity: 0, x: "100%" }}
           variants={titleVariant}
           className="section-title text-white text-center"
         >
