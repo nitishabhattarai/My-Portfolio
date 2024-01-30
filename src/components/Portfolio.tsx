@@ -36,7 +36,8 @@ const Portfolio = () => {
       <motion.div
         ref={ref}
         animate={controls}
-        initial={{ opacity: 0, x: "100%" }}
+        initial={{ opacity: 0 }}
+        // initial={{ opacity: 0, x: "100%" }}
         variants={titleVariant}
         className="text-center section-title"
       >
@@ -45,8 +46,8 @@ const Portfolio = () => {
       <motion.div
         variants={container}
         initial="hidden"
-        animate="visible"
-        className="mt-12 grid xl:grid-cols-2 gap-10 portfolio"
+        animate={controls}
+        className="grid gap-10 mt-12 xl:grid-cols-2 portfolio"
       >
         {portfolio.map((item, key) => {
           return (
@@ -65,7 +66,7 @@ const Portfolio = () => {
                   />
                   <div className="p-10 invisible flex flex-col justify-center text-center bg-primary absolute top-0 z-20 h-full transition-all duration-[2s] ease-out content">
                     <div className="text-3xl project-title">{item.title}</div>
-                    <div className="text-sm mt-2 description">
+                    <div className="mt-2 text-sm description">
                       {item.description}
                     </div>
 
@@ -75,7 +76,7 @@ const Portfolio = () => {
                           return (
                             <span
                               key={key}
-                              className="border border-white py-1 px-2 rounded-lg mr-2"
+                              className="px-2 py-1 mr-2 border border-white rounded-lg"
                             >
                               {tag}
                             </span>

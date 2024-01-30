@@ -34,8 +34,7 @@ const Header = () => {
       }}
     >
       <div
-        className="w-full flex justify-between
-    items-center xl:max-w-7xl mx-auto"
+        className="flex items-center justify-between w-full mx-auto xl:max-w-7xl"
       >
         <Link
           to="/"
@@ -49,7 +48,7 @@ const Header = () => {
             Nitisha
           </h1>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="flex-row hidden gap-10 list-none sm:flex">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -64,7 +63,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="flex items-center justify-end flex-1 sm:hidden">
           <img
             src={menu}
             alt="menu"
@@ -79,8 +78,7 @@ const Header = () => {
         z-10 rounded-xl `}
           >
             <ul
-              className="list-none 
-                  flex justify-end items-start flex-col gap-4"
+              className="flex flex-col items-start justify-end gap-4 list-none"
             >
               {navLinks.map((link) => (
                 <li

@@ -20,21 +20,21 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [`turning ideas into real life products!`], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
+      strings: [`turning ideas into products!`], // Strings to display
+      // Speed settings, try different values until you get good results
       startDelay: 300,
       typeSpeed: 200,
       backSpeed: 150,
       backDelay: 100,
     });
 
-    // Destropying
+    // Destroying
     return () => {
       typed.destroy();
     };
   }, []);
   return (
-    <div className="h-screen relative text-center bg-no-repeat bg-center bg-cover bg-black">
+    <div className="relative h-screen text-center bg-black bg-center bg-no-repeat bg-cover">
       <Particles
         id="tsparticles"
         height="100vh"
@@ -109,9 +109,9 @@ const Home = () => {
           detectRetina: true,
         }}
       />
-      <div className="text-center absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 hero_content">
+      <div className="absolute text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hero_content">
         <div
-          className="bg-gradient-to-r from-secondary via-blue-500 to-pink-400 inline-block text-transparent bg-clip-text text-7xl max-w-5xl"
+          className="inline-block max-w-5xl text-transparent bg-gradient-to-r from-secondary via-blue-500 to-pink-400 bg-clip-text text-7xl"
           ref={el}
         ></div>
       </div>
