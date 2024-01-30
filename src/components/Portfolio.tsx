@@ -47,7 +47,7 @@ const Portfolio = () => {
         variants={container}
         initial="hidden"
         animate={controls}
-        className="grid gap-10 mt-12 xl:grid-cols-2 portfolio"
+        className="grid gap-5 mt-12 xl:grid-cols-2 portfolio"
       >
         {portfolio.map((item, key) => {
           return (

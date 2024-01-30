@@ -43,7 +43,7 @@ const Works = () => {
       >
         WHAT I DO
       </motion.div>
-      <div className="px-10 mx-auto mt-12 xl:max-w-6xl 2xl:max-w-7xl works">
+      <div className="px-10 mx-auto mt-8 xl:max-w-6xl 2xl:max-w-7xl works">
         <div className="work">
           <motion.div
             variants={container}
